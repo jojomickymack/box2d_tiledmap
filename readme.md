@@ -9,9 +9,4 @@ render(). These end up sharing the same coordinate system because they share the
 The 'player' is just a dynamic body in the world whose linearVelocity is bound to key input. On mobile, the left and right 
 sides of the screen act as a controller (this is taken from the superkoalio example).
 
-My thoughts on using Box2d as a physics engine for your game is that if you build your game around box2d, you may end up 
-regretting it - you simply can't emulate the 'ardcade physics' that's makes platforming work well, and with box2d it's pretty 
-easy to get the world into 'freak out mode' if you start trying to do a lot with it.
-
-Still, it's perfect for physics experiments, and with tiled maps integration you'll be able to set up a very complex 
-environment. 
+If you are trying to get arcade style physics for a 2d platformer game, you probably don't want to use box2d. I read an article at some point that explained how box2d is 'too realistic' for those types of games, and I agree. If you want to knock things over and see them scatter realistically, box2d is perfect - if you want to have precise control over a characteer jumping around and stopping when touching a wall, you're not going to like box2d.
