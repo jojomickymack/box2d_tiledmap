@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.2" orientation="orthogonal" renderorder="right-down" width="30" height="10" tilewidth="64" tileheight="64" infinite="0" nextlayerid="6" nextobjectid="89">
+ <tileset firstgid="1" name="bricks" tilewidth="64" tileheight="64" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1">
+   <image width="64" height="64" source="bricks/brickSpecial08.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="tiles01" width="30" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,
+2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,
+2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,
+2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,
+2,0,0,0,0,0,2,2,2,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="shapes01">
+  <object id="52" x="0" y="640">
+   <polygon points="0,0 64,0 64,-640"/>
+  </object>
+  <object id="53" x="0" y="0">
+   <polygon points="0,0 0,640 64,0"/>
+  </object>
+  <object id="54" x="64" y="512">
+   <polygon points="0,0 0,128 256,64"/>
+  </object>
+  <object id="55" x="320" y="576">
+   <polygon points="0,0 0,64 -256,64"/>
+  </object>
+  <object id="56" x="320" y="576">
+   <polygon points="0,0 0,64 192,0"/>
+  </object>
+  <object id="57" x="512" y="576">
+   <polygon points="0,0 0,64 -192,64"/>
+  </object>
+  <object id="59" x="512" y="576">
+   <polygon points="0,0 0,64 112,-32"/>
+  </object>
+  <object id="64" x="512" y="640">
+   <polygon points="0,0 112,-96 208,0"/>
+  </object>
+  <object id="65" x="624" y="544">
+   <polygon points="0,0 96,0 96,96"/>
+  </object>
+  <object id="66" x="720" y="544">
+   <polygon points="0,0 0,96 144,32"/>
+  </object>
+  <object id="67" x="864" y="576">
+   <polygon points="0,0 -144,64 512,64"/>
+  </object>
+  <object id="68" x="1376" y="640">
+   <polygon points="0,0 0,-64 -512,-64"/>
+  </object>
+  <object id="69" x="1376" y="576">
+   <polygon points="0,0 0,64 144,-48"/>
+  </object>
+  <object id="70" x="1520" y="528">
+   <polygon points="0,0 -144,112 144,112"/>
+  </object>
+  <object id="72" x="1792" y="528">
+   <polygon points="0,0 0,112 128,112"/>
+  </object>
+  <object id="74" x="1920" y="640">
+   <polygon points="0,0 0,-110 -128,-110"/>
+  </object>
+  <object id="75" x="1664" y="640">
+   <polygon points="0,0 0,-112 -144,-112"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="shapes02">
+  <object id="85" x="192" y="208">
+   <polyline points="0,0 -80,144 64,144 0,0"/>
+  </object>
+  <object id="86" x="368" y="176">
+   <polyline points="0,0 64,128 128,0 0,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="walls01">
+  <object id="50" x="0" y="0" width="64" height="640"/>
+  <object id="88" x="1664" y="448" width="128" height="192"/>
+ </objectgroup>
+ <objectgroup id="5" name="floors01">
+  <object id="3" x="64" y="512">
+   <polyline points="0,0 256,64"/>
+  </object>
+  <object id="8" x="1792" y="528">
+   <polyline points="0,0 128,0"/>
+  </object>
+  <object id="9" x="320" y="576">
+   <polyline points="0,0 192,0"/>
+  </object>
+  <object id="10" x="864" y="576">
+   <polyline points="0,0 512,0"/>
+  </object>
+  <object id="11" x="1376" y="576">
+   <polyline points="0,0 144,-48"/>
+  </object>
+  <object id="12" x="1664" y="528">
+   <polyline points="0,0 -144,0"/>
+  </object>
+  <object id="13" x="1664" y="448">
+   <polyline points="0,0 128,0"/>
+  </object>
+  <object id="17" x="512" y="576">
+   <polyline points="0,0 112,-32"/>
+  </object>
+  <object id="18" x="624" y="544">
+   <polyline points="0,0 96,0"/>
+  </object>
+  <object id="20" x="192" y="384">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="21" x="1280" y="384">
+   <polyline points="0,0 -192,0"/>
+  </object>
+  <object id="22" x="576" y="256">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="23" x="384" y="320">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="24" x="1408" y="320">
+   <polyline points="0,0 64,0"/>
+  </object>
+ </objectgroup>
+</map>
