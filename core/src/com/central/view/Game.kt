@@ -56,7 +56,7 @@ class Player(world: World) {
 object GameStage {
     val stg = Stage()
     val map = TmxMapLoader().load("map01.tmx")
-    val mr = OrthogonalTiledMapRenderer(map, 1/64f)
+    val mr = OrthogonalTiledMapRenderer(map, 1/32f)
     val sr = ShapeRenderer()
     val debugRenderer = Box2DDebugRenderer()
     val cam = OrthographicCamera(20f, 20 * (Gdx.graphics.width / Gdx.graphics.height).toFloat())
