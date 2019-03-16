@@ -1,5 +1,7 @@
 # LibGdx/Ktx Example Using Box2d and Tile Map Polyline Collision
 
+![box2d example](.github/box2d.gif?raw=true)
+
 This example loads a tiled map which contains some object layers (floors, walls, shapes) that are made of polygon and 
 polylines objects. The objects are converted into box2d shapes.
 
