@@ -118,4 +118,10 @@ class Game(val application: App) : KtxScreen {
     override fun show() {
         Gdx.input.inputProcessor = InputMultiplexer(inputProcessor, GameObj.stg)
     }
+
+    override fun dispose() {
+        GameObj.dispose()
+        println("all disposable memory freed")
+        super.dispose()
+    }
 }

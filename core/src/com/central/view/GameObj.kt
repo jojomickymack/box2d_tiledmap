@@ -40,4 +40,15 @@ object GameObj {
     init {
         //cam.setToOrtho(false, Gdx.graphics.width.toFloat(), Gdx.graphics.height.toFloat())
     }
+
+    fun dispose() {
+        // this batch object is the batch from the map renderer - it gets recovered when mr.dispose is called
+        // this.batch.dispose()
+        this.stg.dispose()
+        this.map.dispose()
+        this.mr.dispose()
+        this.sr.dispose()
+        this.debugRenderer.dispose()
+        this.world.dispose()
+    }
 }
