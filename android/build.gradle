@@ -25,7 +25,7 @@ android {
         exclude 'META-INF/robovm/ios/robovm.xml'
     }
     defaultConfig {
-        applicationId 'com.central.Box2dTiledMapExample'
+        applicationId 'com.central'
         minSdkVersion 9
         targetSdkVersion 26
         versionCode 1
